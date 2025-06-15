@@ -15,7 +15,7 @@ global.botNumber = '' //Ejemplo: 51921826291
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.owner = ['51921826291'];
+global.owner = ['51971285104'];
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -28,7 +28,7 @@ global.prems = []
 global.libreria = 'MayBaileys'
 global.baileys = 'V 6.7.16' 
 global.vs = '2.2.0'
-global.nameqr = 'SoyMaycol'
+global.nameqr = 'Tanjiro'
 global.namebot = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃'
 global.sessions = './Sessions'
 global.jadi = 'MayBots' 
