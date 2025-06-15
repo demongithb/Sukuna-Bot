@@ -19,8 +19,8 @@ import moment from 'moment-timezone'
 // ✧ Emojis y configuración
 const emojiHanako = '🇯🇵' 
 const emojiTiempo = '⏳'
-const moneda = 'MayCoins'
-const canalId = '120363417511396883@g.us'
+const moneda = 'Coins'
+const canalId = '120363403106079008@newsletter'
 
 let handler = async (m, { conn }) => {
     try {
