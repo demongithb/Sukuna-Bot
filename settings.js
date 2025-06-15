@@ -29,38 +29,38 @@ global.libreria = 'MayBaileys'
 global.baileys = 'V 6.7.16' 
 global.vs = '2.2.0'
 global.nameqr = 'SoyMaycol'
-global.namebot = '𝐌𝐚𝐲𝐜𝐨𝐥𝐀𝐈𝐔𝐥𝐭𝐫𝐚-𝐌𝐃'
+global.namebot = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃'
 global.sessions = './Sessions'
 global.jadi = 'MayBots' 
 global.yukiJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '𝕄𝕒𝕪𝕔𝕠𝕝𝔸𝕀𝕌𝕝𝕥𝕣𝕒-𝕄𝔻'
-global.botname = '𝐌𝐚𝐲𝐜𝐨𝐥𝐀𝐈𝐔𝐥𝐭𝐫𝐚-𝐌𝐃'
-global.wm = '𝙼𝚊𝚢𝚌𝚘𝚕𝙰𝙸𝚄𝚕𝚝𝚛𝚊-𝙼𝙳'
-global.author = '𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧 𝙎𝙤𝙮𝙈𝙖𝙮𝙘𝙤𝙡 <3'
-global.dev = '𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧 𝙎𝙤𝙮𝙈𝙖𝙮𝙘𝙤𝙡 <3'
-global.textbot = '𝐌𝐚𝐲𝐜𝐨𝐥𝐀𝐈𝐔𝐥𝐭𝐫𝐚-𝐌𝐃 • 𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧 𝙎𝙤𝙮𝙈𝙖𝙮𝙘𝙤𝙡 <3'
-global.etiqueta = '𝙼𝚊𝚢𝚌𝚘𝚕𝙰𝙸'
+global.packname = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃'
+global.botname = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃'
+global.wm = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃'
+global.author = 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
+global.dev = 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
+global.textbot = '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃 • ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
+global.etiqueta = 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.moneda = 'MayCoins'
+global.moneda = 'Coins'
 global.welcom1 = '❍ Edita Con El Comando setwelcome'
 global.welcom2 = '❍ Edita Con El Comando setbye'
-global.banner = 'https://files.catbox.moe/l8ohvs.jpeg'
-global.avatar = 'https://files.catbox.moe/uvc28a.jpeg'
+global.banner = 'https://files.catbox.moe/xc7841.jpeg'
+global.avatar = 'https://files.catbox.moe/3qyzmz.jpg'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp1 = 'https://chat.whatsapp.com/EprzCjr7XFyAIFr9OfBh2o'
-global.comunidad1 = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.channel = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.channel2 = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.md = 'https://github.com/SoySapo6/MaycolAI'
-global.correo = 'karatekidamericatv@gmail.com'
-global.cn ='https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R';
+global.gp1 = 'https://whatsapp.com/channel/0029VbACFO6KrWR5qXyPoo0d'
+global.comunidad1 = 'https://whatsapp.com/channel/0029VbACFO6KrWR5qXyPoo0d'
+global.channel = 'https://whatsapp.com/channel/0029VbACFO6KrWR5qXyPoo0d'
+global.channel2 = 'https://whatsapp.com/channel/0029VbACFO6KrWR5qXyPoo0d'
+global.md = 'https://github.com/SoySapo6/TanjitoBot'
+global.correo = 'soymaycol.cn@gmail.com'
+global.cn ='https://whatsapp.com/channel/0029VbACFO6KrWR5qXyPoo0d';
 global.owner_ngl ='soymaycol1';
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -68,7 +68,7 @@ global.owner_ngl ='soymaycol1';
 global.catalogo = fs.readFileSync('./src/catalogo.jpg');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.ch = {
-ch1: '120363372883715167@newsletter',
+ch1: '120363420010803947@newsletter',
 }
 global.multiplier = 70
 
