@@ -582,73 +582,78 @@ let verifyaleatorio = ['registrar', 'reg', 'verificar', 'verify', 'register'].ge
 
 const msg = {
   rowner: `
-╔═══════❖『 ✦ HANAKO-SAMA ✦ 』❖═══════╗
-║ (≖ᴗ≖✿) El hechizo *${comando}* solo puede ser
-║ invocado por los Dioses del retrete (creadores).
-╚════════════════════════════════════╝`,
+╔═══❖『 🌸 Espíritu del Corazón 🌸 』❖═══╗
+║ (｡•́︿•̀｡) Lo siento... pero *${comando}*  
+║ sólo puede ser usado por quienes cargan  
+║ con el peso de este mundo: los *creadores*.  
+╚══════════════════════════════════╝`,
 
   owner: `
-╭─┈ ✦『 Control Paranormal 』✦ ┈─╮
-│ ⛧ *${comando}* está reservado para los  
-│ shinigamis programadores (desarrolladores).  
-╰───────────────────────────────╯`,
+╭──『 🗡️ Voluntad de Fuego 🗡️ 』──╮
+│ (︶︹︺) El comando *${comando}*  
+│ está reservado para quienes, con valor,  
+│ luchan desde las sombras: los desarrolladores.  
+╰──────────────────────────────╯`,
 
   mods: `
-╔═──「 ✧ Espíritus Vigilantes ✧ 」──═╗
-║ Sólo los protectores del otro mundo (mods)  
-║ pueden controlar el hechizo *${comando}*.  
-╚════════════════════════════════════╝`,
+╔═『 🛡️ Guardianes del Camino 🛡️ 』═╗
+║ (｡•̀ᴗ-)✧ El comando *${comando}*  
+║ solo puede ser invocado por los *mods*,  
+║ quienes protegen este lugar con justicia.  
+╚════════════════════════════════╝`,
 
   premium: `
-╭───✿『 ✦ ✧ MOCHI PREMIUM ✧ ✦ 』✿───╮
-│ (◍•ᴗ•◍)❤ Solo almas elegidas pueden usar  
-│ el comando sagrado *${comando}*.  
-╰──────────────────────────────────╯`,
+╭───『 ✧ Almas Bendecidas ✧ 』───╮
+│ (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡ Sólo aquellos con  
+│ el espíritu más brillante pueden usar *${comando}*.  
+╰──────────────────────────────╯`,
 
   group: `
-╔═━「 ☁︎ Ritual Grupal ☁︎ 」━═╗
-║ (⁎⁍̴̛ᴗ⁍̴̛⁎) *${comando}* requiere un círculo  
-║ de invocación múltiple (grupo).  
-╚═════════════════════════════╝`,
+╔═『 🤝 Fuerza en la Unión 🤝 』═╗
+║ ( ⁎ᵕᴗᵕ⁎ ) El comando *${comando}*  
+║ sólo puede usarse entre compañeros de viaje.  
+╚══════════════════════════════╝`,
 
   private: `
-╭──⊹⊱『 ☁︎ Susurro Privado ☁︎ 』⊰⊹──╮
-│ Este hechizo *${comando}* solo puede ser  
-│ revelado en un santuario secreto (chat privado).  
-╰─────────────────────────────────────╯`,
-
-  admin: `
-╭────『 ✦ Líder Espiritual ✦ 』────╮
-│ El comando *${comando}* sólo responde a  
-│ los shamanes del grupo (admins).  
+╭──『 🌙 Momento de Calma 🌙 』──╮
+│ (⊃｡•́‿•̀｡)⊃ Este comando *${comando}*  
+│ solo se puede usar en un lugar tranquilo...  
+│ como una conversación privada.  
 ╰─────────────────────────────╯`,
 
+  admin: `
+╭─『 🌀 Honor del Líder 🌀 』─╮
+│ (•̀ᴗ•́)و El poder del comando *${comando}*  
+│ está en manos de los líderes de este grupo.  
+╰────────────────────────────╯`,
+
   botAdmin: `
-(╥﹏╥) ¡Ay no!  
-No puedo usar *${comando}* si no soy un  
-espíritu superior (admin del grupo).  
-¡Dame poder MUAJAJAJA o me encierro en el baño para siempre >:(`,
+(ಥ﹏ಥ) Lo siento mucho...  
+No puedo usar *${comando}* si no soy  
+administrador. Por favor, confía en mí...  
+¡Prometo proteger este grupo con todo mi ser! 🥺🗡️`,
 
   unreg: `
-╔══『 ✦ PACTO FANTASMAL ✦ 』══╗
-║ (｡•́︿•̀｡) No puedes usar *${comando}*  
-║ hasta que firmes tu contrato espiritual.
-║ Usa el ritual:
-║ » #${verifyaleatorio} ${user2}.${edadaleatoria}
-╚═══════════════════════════╝`,
-
-  channel: `
-╔══『 ✦ SEGUDORES FANTASMAS ✦ 』══╗
-║ (｡•́︿•̀｡) No puedes usar *${comando}*  
-║ Solo se permite en canales.
-║ Usa los comandos de canales para
-║ Tu Canal!
+╔═『 📜 Juramento del Cazador 📜 』═╗
+║ (｡•́︿•̀｡) Aún no has hecho tu juramento...  
+║ Para usar *${comando}*, primero debes  
+║ registrarte como un verdadero aliado.  
+║ Usa el código:  
+║ » #${verifyaleatorio} ${user2}.${edadaleatoria}  
 ╚═════════════════════════════╝`,
 
+  channel: `
+╔═『 🗣️ Voz para Muchos 🗣️ 』═╗
+║ (。﹏。) El comando *${comando}*  
+║ solo puede despertar su poder en un canal.  
+║ ¡Asegúrate de estar en uno!  
+╚═══════════════════════════╝`,
+
   restrict: `
-⊱┈・『 ✦ FUNCIÓN SELLADA ✦ 』・┈⊰  
-(⚆_⚆) Este hechizo está encerrado por  
-un sello maldito. ¡Actívalo si te atreves!`
+⊱─『 🔒 Técnica Prohibida 🔒 』─⊰  
+(⚆_⚆) Este comando fue sellado  
+por una fuerza más allá del entendimiento...  
+¡Solo tú puedes romper el sello si tienes el valor!`
 }[type];
     
 if (msg) return m.reply(msg).then(_ => m.react('✖️'))}
