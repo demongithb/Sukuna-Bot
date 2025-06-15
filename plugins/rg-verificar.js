@@ -98,7 +98,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 │ ❀ *Sellos de Invocación:* +25
 │    
 ├─ "Recuerda visitar el baño del 3er piso..."
-│ https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R
+│ https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
 `.trim()
@@ -112,9 +112,9 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
     contextInfo: {
       externalAdReply: {
         title: '✧ Pacto con Hanako-kun Completado ✧',
-        body: 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R',
+        body: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
         thumbnailUrl: pp,
-        sourceUrl: 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R',
+        sourceUrl: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
         mediaType: 1,
         showAdAttribution: true,
         renderLargerThumbnail: true
@@ -123,7 +123,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
   }, { quoted: m })
 
   // ✧ Notificar al Reino Espiritual (grupo de notificaciones)
-  const reinoEspiritual = '120363372883715167@newsletter'
+  const reinoEspiritual = '120363403106079008@newsletter'
   const mensajeNotificacion = `
 ╭─「 ❀ 𝑵𝒖𝒆𝒗𝒐 𝑨𝒔𝒊𝒔𝒕𝒆𝒏𝒕𝒆 ❀ 」─╮
 │ ୨୧ *Nombre:* ${name}
