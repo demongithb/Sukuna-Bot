@@ -44,13 +44,13 @@ let { say } = cfonts
 
 console.log(chalk.bold.redBright(`\n✰ Iniciando Yuki-Suou-Bot ✰\n`))
 
-say('MaycolAIUltraMD', {
+say('TanjiroBot', {
 font: 'block',
 align: 'center',
 colors: ['magentaBright']
 })
 
-say(`Hecho por SoyMaycol`, {
+say(`Viva Perú concha tu Madreee 🔥🔥🗿`, {
 font: 'console',
 align: 'center',
 colors: ['blueBright']
