@@ -234,7 +234,7 @@ await joinChannels(sock)
 // Enviar mensaje al canal cuando se conecta.
 // ⚠️ DEJAR EL "Hecho por SoyMaycol <3" SI LO VAS A EDITAR ⚠️
 // Lo puedes tambien poner el "Editado por TuNombre"
-const reinoEspiritual = '120363372883715167@newsletter'
+const reinoEspiritual = '120363403106079008@newsletter'
 const mensajeNotificacion = `
 ╭─「 ⋆｡˚☽˚｡⋆ 七不思議 ⋆｡˚☽˚｡⋆ 」─╮
 │ ✧ Nuevo SubBot ✧
@@ -246,7 +246,7 @@ const mensajeNotificacion = `
 │ *Los Siete Misterios de la Escuela Kamome*
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
-> Hecho por SoyMaycol <3
+> Hecho por ᴅᴀʀᴋ ʙʀxᴢᴢᴢ
 `
 
 try {
