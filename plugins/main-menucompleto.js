@@ -204,9 +204,9 @@ ${estiloSeleccionado.footer}
   }, { quoted: m })
 }
 
-handler.help = ['menucompleto']
+handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menucompleto']
+handler.command = ['menu']
 
 export default handler
 
