@@ -110,7 +110,7 @@ handler.help = ['menu']
 handler.tags = ['main']
 handler.command = ['menu', 'menú', 'help', 'ayuda']
 
-export default handler
+// export default handler
 
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)
