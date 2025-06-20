@@ -31,7 +31,7 @@ let handler = async (m, { conn, args }) => {
   let estilosMenu = [
     // Estilo 1: Clásico Hanako
     {
-      header: `╭═══❖ 𝓗𝓪𝓷𝓪𝓴𝓸 𝓑𝓸𝓽 ❖═══╮`,
+      header: `╭═══❖ TanjiroBot ❖═══╮`,
       userSection: `┊ ｡ﾟ☆: *.${name}.* :☆ﾟ｡\n┊ *_${saludo}_*`,
       infoTitle: `╰═══❖ 𝓘𝓷𝓯𝓸 𝓓𝓮𝓵 𝓢𝓾𝓶𝓸𝓷 ❖═══╯`,
       categoryStyle: (tag, cmds, emoji) => `
@@ -43,9 +43,9 @@ ${cmds.map(cmd => `┊ ➤ ${cmd}`).join('\n')}
 
     // Estilo 2: Místico
     {
-      header: `✧･ﾟ: *✧･ﾟ:* 𝙷𝚊𝚗𝚊𝚔𝚘 𝙱𝚘𝚝 *:･ﾟ✧*:･ﾟ✧`,
+      header: `✧･ﾟ: *✧･ﾟ:* TanjiroBot *:･ﾟ✧*:･ﾟ✧`,
       userSection: `◦ •●◉✿ ${name} ✿◉●• ◦\n✦ *_${saludo}_*`,
-      infoTitle: `◤ ◥ ◣ ◢ 𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙴𝚂𝙿𝙸𝚁𝙸𝚃𝚄 ◤ ◥ ◣ ◢`,
+      infoTitle: `◤ ◥ ◣ ◢ Info del Cazador ◤ ◥ ◣ ◢`,
       categoryStyle: (tag, cmds, emoji) => `
 ⟬ ${emoji} ${tag} ${emoji} ⟭
 ${cmds.map(cmd => `◦ ${cmd}`).join('\n')}
@@ -79,7 +79,7 @@ ${cmds.map(cmd => `▸ ${cmd}`).join('\n')}
 
     // Estilo 5: Dreamy
     {
-      header: `･ﾟ✧*:･ﾟ✧ 𝚂𝚞𝚖𝚘𝚗 𝙷𝚊𝚗𝚊𝚔𝚘 ✧･ﾟ: *✧･ﾟ`,
+      header: `･ﾟ✧*:･ﾟ✧ Agua... ✧･ﾟ: *✧･ﾟ`,
       userSection: `☾ ⋆*･ﾟ ${name} ･ﾟ*⋆ ☽\n～ *_${saludo}_* ～`,
       infoTitle: `⋆｡‧˚ʚ 𝙸𝙽𝙵𝙾 𝙼Á𝙶𝙸𝙲𝙰 ɞ˚‧｡⋆`,
       categoryStyle: (tag, cmds, emoji) => `
@@ -132,14 +132,14 @@ ${estiloSeleccionado.userSection}
 ${estiloSeleccionado.infoTitle}
 
 💻 Sistema: Multi-Device
-👤 Espíritu: @${userId.split('@')[0]}
+👤 Cazador: @${userId.split('@')[0]}
 ⏰ Tiempo activo: ${uptime}
-👥 Espíritus: ${totalreg} espíritus
+👥 Cazadores: ${totalreg} espíritus
 ⌚ Hora: ${hour}
 
 ${estiloSeleccionado.footer}
 
-> Hecho con amor por: *_SoyMaycol_* (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤
+> Hecho por ᴅᴀʀᴋ ʙʀxᴢᴢᴢ
 `.trim()
 
   // Añadir categorías con el estilo seleccionado
@@ -160,8 +160,8 @@ ${estiloSeleccionado.footer}
     contextInfo: {
       externalAdReply: {
         title: botname,
-        body: "Un amor que nunca se acaba Jeje <3",
-        thumbnailUrl: 'https://files.catbox.moe/x9hw62.png',
+        body: "¡Esperame un Momento Cazador!",
+        thumbnailUrl: 'https://files.catbox.moe/s53e5g.webp',
         sourceUrl: redes,
         mediaType: 1,
         showAdAttribution: true,
@@ -172,7 +172,7 @@ ${estiloSeleccionado.footer}
 
   // Lista de videos temáticos para más variedad
   let videosHanako = [
-    'https://files.catbox.moe/i74z9e.mp4',
+    'https://files.catbox.moe/095s6m.mp4',
     // Puedes agregar más URLs de videos aquí
   ]
   let videoSeleccionado = videosHanako[Math.floor(Math.random() * videosHanako.length)]
@@ -187,13 +187,13 @@ ${estiloSeleccionado.footer}
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: '120363372883715167@newsletter',
-        newsletterName: 'SoyMaycol <3',
+        newsletterName: 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ',
         serverMessageId: -1,
       },
       forwardingScore: 999,
       externalAdReply: {
         title: botname,
-        body: "Un amor que nunca se acaba Jeje <3",
+        body: "¡Esperame Humano!",
         thumbnailUrl: banner,
         sourceUrl: redes,
         mediaType: 1,
