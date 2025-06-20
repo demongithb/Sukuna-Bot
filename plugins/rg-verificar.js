@@ -86,7 +86,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
   // ✧ Certificado del pacto con Hanako-kun
   const certificadoPacto = `
 ╭─「 ⋆｡˚☽˚｡⋆ 七不思議 ⋆｡˚☽˚｡⋆ 」─╮
-│    ✧ 𝑷𝒂𝒄𝒕𝒐 𝑪𝒐𝒏 𝑯𝒂𝒏𝒂𝒌𝒐-𝒌𝒖𝒏 ✧    
+│    ✧ Nuevo Cazador ✧    
 │    
 │ ୨୧ *Nombre:* ${name}
 │ ✿ *Edad:* ${age} años
@@ -96,7 +96,6 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 │ ✦ *Coins:* +46
 │ ☽ *Energía Espiritual:* +310
 │ ❀ *Sellos de Invocación:* +25
-│    
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
 `.trim()
@@ -134,7 +133,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 │ ❀ Sellos de Invocación: +25
 │
 │ 📜 *Fecha del Pacto:* ${moment().format('YYYY-MM-DD HH:mm:ss')}
-╰─「 𝑷𝒐𝒓 𝒍𝒐𝒔 𝑺𝒊𝒆𝒕𝒆 𝑴𝒊𝒔𝒕𝒆𝒓𝒊𝒐𝒔 」─╯`
+╰─「 𝑷𝒐𝒓 𝒍𝒐𝒔 𝑺𝒊𝒆𝒕𝒆 𝑴𝒊𝒔𝒕𝒆𝒓𝒊𝒐𝒔 」─╯`;
   
   // ✧ Intento de comunicación con el Reino Espiritual
   try {
