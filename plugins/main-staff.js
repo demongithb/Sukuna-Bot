@@ -2,7 +2,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
   let img = 'https://files.catbox.moe/67ulz8.jpeg';
   let staff = `╭─❍「 ✦ Staff ✦ 」 
 │
-├─ ✧ *Dueño:* SoyMaycol <3
+├─ ✧ *Dueño:* Dark Brxzzz
 ├─ ✧ *Número:* wa.me/51921826291
 ├─ ✧ *GitHub:* https://github.com/SoySapo6
 │
