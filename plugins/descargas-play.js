@@ -1,7 +1,7 @@
 import yts from "yt-search";
 import { ytv, yta } from "@soymaycol/maytube";
 
-const limit = 100; // MB
+const limit = 1000; // MB
 
 const handler = async (m, { conn, text, command }) => {
   if (!text) return m.reply("> Ingresa el nombre de un video o una URL de YouTube.");
