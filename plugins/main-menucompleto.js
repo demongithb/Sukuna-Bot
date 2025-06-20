@@ -69,7 +69,7 @@ ${cmds.map(cmd => `│ ♡ ${cmd}`).join('\n')}
     {
       header: `▁ ▂ ▄ ▅ ▆ ▇ █ ᴛᴀɴᴊɪʀᴏ ʙᴏᴛ █ ▇ ▆ ▅ ▄ ▂ ▁`,
       userSection: `⌈ ${name} ⌉\n⟨ *_${saludo}_* ⟩`,
-      infoTitle: `▰▱▰▱ 𝙸𝙽𝙵𝙾 𝙴𝚂𝙿𝙸𝚁𝙸𝚃𝚄𝙰𝙻 ▰▱▰▱`,
+      infoTitle: `▰▱▰▱ Cazador ▰▱▰▱`,
       categoryStyle: (tag, cmds, emoji) => `
 ▲ ${tag} ${emoji} ▲
 ${cmds.map(cmd => `▸ ${cmd}`).join('\n')}
@@ -186,7 +186,7 @@ ${estiloSeleccionado.footer}
       mentionedJid: [m.sender, userId],
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363372883715167@newsletter',
+        newsletterJid: '120363403106079008@newsletter',
         newsletterName: 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ',
         serverMessageId: -1,
       },
