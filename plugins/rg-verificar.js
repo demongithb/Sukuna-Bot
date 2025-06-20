@@ -53,7 +53,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 ✧ Formato correcto: *${usedPrefix + command} nombre.edad*
 ✧ Ejemplo: *${usedPrefix + command} ${name2}.18*
 
-"Para invocar a Hanako-kun, debes escribir tu nombre y edad correctamente..."`)
+"Para invocar a Tanjiro, debes escribir tu nombre y edad correctamente..."`)
   }
 
   // ✧ Extraer la información del ritual
@@ -93,12 +93,10 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 │ ♱ *Sello Único:* ${sn}
 │    
 ├─ ✧ 𝑩𝒆𝒏𝒅𝒊𝒄𝒊𝒐𝒏𝒆𝒔 𝑶𝒕𝒐𝒓𝒈𝒂𝒅𝒂𝒔:
-│ ✦ *MayCoins:* +46
+│ ✦ *Coins:* +46
 │ ☽ *Energía Espiritual:* +310
 │ ❀ *Sellos de Invocación:* +25
 │    
-├─ "Recuerda visitar el baño del 3er piso..."
-│ https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
 `.trim()
@@ -111,7 +109,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
     text: certificadoPacto,
     contextInfo: {
       externalAdReply: {
-        title: '✧ Pacto con Hanako-kun Completado ✧',
+        title: '✧ Pacto con Tanjiro Completo ♦',
         body: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
         thumbnailUrl: pp,
         sourceUrl: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
@@ -123,7 +121,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
   }, { quoted: m })
 
   // ✧ Notificar al Reino Espiritual (grupo de notificaciones)
-  const reinoEspiritual = '120363403106079008@newsletter'
+  const reinoEspiritual = ''
   const mensajeNotificacion = `
 ╭─「 ❀ 𝑵𝒖𝒆𝒗𝒐 𝑨𝒔𝒊𝒔𝒕𝒆𝒏𝒕𝒆 ❀ 」─╮
 │ ୨୧ *Nombre:* ${name}
@@ -131,14 +129,13 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
 │ ♱ *Sello:* ${sn}
 │
 ├─ ✧ 𝑩𝒆𝒏𝒅𝒊𝒄𝒊𝒐𝒏𝒆𝒔:
-│ ✦ MayCoins: +46
+│ ✦ Coins: +46
 │ ☽ Energía Espiritual: +310
 │ ❀ Sellos de Invocación: +25
 │
 │ 📜 *Fecha del Pacto:* ${moment().format('YYYY-MM-DD HH:mm:ss')}
-╰─「 𝑷𝒐𝒓 𝒍𝒐𝒔 𝑺𝒊𝒆𝒕𝒆 𝑴𝒊𝒔𝒕𝒆𝒓𝒊𝒐𝒔 」─╯
-> Hanako-kun & MaycolAIUltraMD`
-
+╰─「 𝑷𝒐𝒓 𝒍𝒐𝒔 𝑺𝒊𝒆𝒕𝒆 𝑴𝒊𝒔𝒕𝒆𝒓𝒊𝒐𝒔 」─╯`
+  
   // ✧ Intento de comunicación con el Reino Espiritual
   try {
     if (global.conn?.sendMessage) {
