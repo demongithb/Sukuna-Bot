@@ -31,7 +31,7 @@ let handler = async (m, { conn, args }) => {
   let estilosMenu = [
     // Estilo 1: Clásico Hanako
     {
-      header: `╭═══❖ TanjiroBot ❖═══╮`,
+      header: `╭═══❖ ᴛᴀɴᴊɪʀᴏ ʙᴏᴛ ❖═══╮`,
       userSection: `┊ ｡ﾟ☆: *.${name}.* :☆ﾟ｡\n┊ *_${saludo}_*`,
       infoTitle: `╰═══❖ 𝓘𝓷𝓯𝓸 𝓓𝓮𝓵 𝓢𝓾𝓶𝓸𝓷 ❖═══╯`,
       categoryStyle: (tag, cmds, emoji) => `
