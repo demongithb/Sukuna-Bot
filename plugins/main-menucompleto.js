@@ -67,7 +67,7 @@ ${cmds.map(cmd => `│ ♡ ${cmd}`).join('\n')}
 
     // Estilo 4: Gótico Elegante
     {
-      header: `▁ ▂ ▄ ▅ ▆ ▇ █ 𝙷𝚊𝚗𝚊𝚔𝚘 𝙱𝚘𝚝 █ ▇ ▆ ▅ ▄ ▂ ▁`,
+      header: `▁ ▂ ▄ ▅ ▆ ▇ █ TanjiroBot █ ▇ ▆ ▅ ▄ ▂ ▁`,
       userSection: `⌈ ${name} ⌉\n⟨ *_${saludo}_* ⟩`,
       infoTitle: `▰▱▰▱ 𝙸𝙽𝙵𝙾 𝙴𝚂𝙿𝙸𝚁𝙸𝚃𝚄𝙰𝙻 ▰▱▰▱`,
       categoryStyle: (tag, cmds, emoji) => `
