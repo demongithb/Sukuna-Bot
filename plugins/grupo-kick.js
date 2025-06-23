@@ -1,6 +1,6 @@
 var handler = async (m, { conn, participants, usedPrefix, command }) => {
     if (!m.mentionedJid[0] && !m.quoted) {
-        return conn.reply(m.chat, `${emoji} Debes mencionar a un usuario para poder expulsarlo del grupo.`, m);
+        return conn.reply(m.chat, '🚩 *Etiqueta o responde al mensaje de la persona que quieres eliminar*', m);
     }
 
     let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender;
@@ -11,27 +11,25 @@ var handler = async (m, { conn, participants, usedPrefix, command }) => {
     //const nn = conn.getName(m.sender);
 
     if (user === conn.user.jid) {
-        return conn.reply(m.chat, `${emoji2} No puedo eliminar el bot del grupo.`, m);
+        return conn.reply(m.chat, '🚩 No puedo eliminar el bot del grupo', m);
     }
 
     if (user === ownerGroup) {
-        return conn.reply(m.chat, `${emoji2} No puedo eliminar al propietario del grupo.`, m);
+        return conn.reply(m.chat, '🚩 No puedo eliminar al propietario del grupo', m);
     }
 
     if (user === ownerBot) {
-        return conn.reply(m.chat, `${emoji2} No puedo eliminar al propietario del bot.`, m);
+        return conn.reply(m.chat, '🚩 No puedo eliminar al propietario del bot', m);
     }
 
     await conn.groupParticipantsUpdate(m.chat, [user], 'remove');
 
-//conn.reply(`${suitag}@s.whatsapp.net`, `${emoji} Un Admin Acabo De Eliminar Un Usuario En El Grupo:\n> ${groupMetadata.subject}.`, m, rcanal, );
 };
 
 handler.help = ['kick'];
 handler.tags = ['grupo'];
-handler.command = ['kick','echar','hechar','sacar','ban'];
+handler.command = ['kick','echar','hechar','ban'];
 handler.admin = true;
-handler.group = true;
 handler.register = true
 handler.botAdmin = true;
 
