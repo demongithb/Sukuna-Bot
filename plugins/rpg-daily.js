@@ -115,7 +115,7 @@ Usa el comando: *_.registrar nombre.edad_*`,
                 text: mensajeRecompensa,
                 contextInfo: {
                     externalAdReply: {
-                        title: '✧ Obsequio Diario de Hanako-kun ✧',
+                        title: '✧ Obsequio Diario de Tanjiro-Bot ✧',
                         body: 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R',
                         thumbnailUrl: 'https://files.catbox.moe/xr2m6u.jpg',
                         sourceUrl: 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R',
