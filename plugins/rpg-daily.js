@@ -95,7 +95,7 @@ Usa el comando: *_.registrar nombre.edad_*`,
 │ ✨ *Energía Espiritual:* +${exp}
 │ 💎 *Gemas Místicas:* +${d}
 │ 🗨️ *Canal:* https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12
-│ 🗨️ *Donde saliste:* https://chat.whatsapp.com/IxoNAHj00aBLTB0jeiJROa
+│ 🗨️ *Donde saliste:* https://chat.whatsapp.com/HnKnpD4uofJHhqVB3D4F7V
 │ 📜 *Fecha:* ${moment().format('YYYY-MM-DD HH:mm:ss')}
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
@@ -229,7 +229,7 @@ function msToTime(duration) {
 
 /**
  * ─────────────────────────────────
- *      ╭──❁ Hanako-kun ❁──╮
+ *      ╭──❁ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ᴍᴅ ❁──╮
  *      │ "Acepta este regalo│
  *      │  como muestra de   │
  *      │  nuestro pacto..." │
