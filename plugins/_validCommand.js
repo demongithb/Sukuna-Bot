@@ -29,7 +29,7 @@ export async function before(m) {
   }
 
   if (chat?.isBanned) {
-    const avisoDesactivado = `╭─❍「 ✦ Tanjiro ✦ 」\n│\n├─ El poder de Hanako ha sido *sellado* en este grupo.\n│\n├─ Invoca su regreso con:\n│   ⇝ *${usedPrefix}bot on*\n╰─✦`
+    const avisoDesactivado = `╭─❍「 ✦ Tanjiro ✦ 」\n│\n├─ El poder de Tanjiro ha sido *sellado* en este grupo.\n│\n├─ Invoca su regreso con:\n│   ⇝ *${usedPrefix}bot on*\n╰─✦`
     await m.reply(avisoDesactivado)
     return
   }
