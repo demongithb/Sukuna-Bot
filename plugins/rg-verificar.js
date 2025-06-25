@@ -108,7 +108,7 @@ Utiliza *${usedPrefix}unreg* para romper el sello actual.`)
     text: certificadoPacto,
     contextInfo: {
       externalAdReply: {
-        title: '✧ Pacto con Tanjiro Completo ♦',
+        title: '✧ Pacto con Tanjiro Completado ♦',
         body: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
         thumbnailUrl: pp,
         sourceUrl: 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12',
