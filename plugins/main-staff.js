@@ -3,8 +3,8 @@ let handler = async (m, { conn, command, usedPrefix }) => {
   let staff = `╭─❍「 ✦ Staff ✦ 」 
 │
 ├─ ✧ *Dueño:* Dark Brxzzz
-├─ ✧ *Número:* wa.me/51921826291
-├─ ✧ *GitHub:* https://github.com/SoySapo6
+├─ ✧ *Número:* wa.me/51971285104
+├─ ✧ *GitHub:* https://github.com/Jxxlzncom
 │
 ├─ ✦ *Bot:* ${botname}
 ├─ ⚘ *Versión:* ${vs}
