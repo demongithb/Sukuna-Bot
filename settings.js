@@ -54,13 +54,13 @@ global.avatar = 'https://files.catbox.moe/3qyzmz.jpg'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp1 = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.comunidad1 = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.channel = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
-global.channel2 = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
+global.gp1 = 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
+global.comunidad1 = 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
+global.channel = 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
+global.channel2 = 'qhttps://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
 global.md = 'https://github.com/Jxxlzncom/TanjiroBot'
 global.correo = 'soymaycol.cn@gmail.com'
-global.cn ='https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R';
+global.cn ='https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12';
 global.owner_ngl ='soymaycol1';
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
