@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-  let img = 'https://files.catbox.moe/67ulz8.jpeg';
+  let img = 'https://files.catbox.moe/cwqdwy.jpg';
   let staff = `╭─❍「 ✦ Staff ✦ 」 
 │
 ├─ ✧ *Dueño:* Dark Brxzzz
