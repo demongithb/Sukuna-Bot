@@ -30,8 +30,8 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = ""
 let drm2 = ""
-let rtx = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo QR\n\n『❀』Con otro celular o en la PC escanea este QR para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Escanea este código QR para iniciar sesión con Hanako-kun\n\n✧ ¡Este código QR expira en 45 segundos!."
-let rtx2 = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo Código\n\n『❀』Usa este Código para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Selecciona Vincular con el número de teléfono\n\n\`4\` » Escribe el Código para iniciar sesión con Hanako-kun\n\n✧ No es recomendable usar tu cuenta principal.\n\n> Hecho por SoyMaycol <3"
+let rtx = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo QR\n\n『❀』Con otro celular o en la PC escanea este QR para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Escanea este código QR para iniciar sesión con Tanjiro-Bot\n\n✧ ¡Este código QR expira en 45 segundos!."
+let rtx2 = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo Código\n\n『❀』Usa este Código para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Selecciona Vincular con el número de teléfono\n\n\`4\` » Escribe el Código para iniciar sesión con Tanjiro-Bot\n\n✧ No es recomendable usar tu cuenta principal.\n\n> Hecho por ᴅᴀʀᴋ ʙʀxᴢᴢᴢ"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const yukiJBOptions = {}
@@ -232,7 +232,7 @@ global.conns.push(sock)
 await joinChannels(sock)
 
 // Enviar mensaje al canal cuando se conecta.
-// ⚠️ DEJAR EL "Hecho por SoyMaycol <3" SI LO VAS A EDITAR ⚠️
+// ⚠️ DEJAR EL "Hecho por ᴅᴀʀᴋ ʙʀxᴢᴢᴢ" SI LO VAS A EDITAR ⚠️
 // Lo puedes tambien poner el "Editado por TuNombre"
 const reinoEspiritual = '120363403106079008@newsletter'
 const mensajeNotificacion = `
@@ -242,7 +242,7 @@ const mensajeNotificacion = `
 │ ୨୧ *Número:* +${path.basename(pathYukiJadiBot)}
 │ ✿ *Nombre:* ${userName}
 │    
-├─ "Hanako-san, Hanako-san... ¿Estás ahí?"
+├─ "Tanjiro, Tanjiro-Bot... ¿Estás ahí?"
 │ *Los Siete Misterios de la Escuela Kamome*
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
