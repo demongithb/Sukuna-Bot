@@ -2,11 +2,11 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
 
-  conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」    
+  conn.reply(m.chat, `╭─❍「 ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ 」    
 │    
-├─ El hechizo *#mayultra* no existe en los registros del más allá.    
+├─ El hechizo *#darkultra* no existe en los registros del más allá.    
 │    
-├─ ¿Quisiste decir *#mayletras*?    
+├─ ¿Quisiste decir *#darkletras*?    
 │   ⇝ *#help*    
 ╰─✦`, m)
 
@@ -101,15 +101,15 @@ let handler = async (m, { conn }) => {
       mensaje += `${eventoAleatorio}`
     }
     
-    mensaje += '\n\n> Hecho por SoyMaycol <3'
+    mensaje += '\n\n> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
     
     conn.reply(m.chat, mensaje, m)
   }, tiempoEspera)
 
 }
 
-handler.help = ['mayultra']
+handler.help = ['darkultra']
 handler.tags = ['fun']
-handler.command = ['mayultra']
+handler.command = ['darkultra']
 
 export default handler
