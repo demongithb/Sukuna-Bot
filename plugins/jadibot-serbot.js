@@ -261,7 +261,7 @@ try {
   console.error('✧ Error al notificar al Reino Espiritual:', e)
 }
 
-m?.chat ? await conn.sendMessage(m.chat, {text: args[0] ? `@${m.sender.split('@')[0]}, ya estás conectado, leyendo mensajes entrantes...` : `@${m.sender.split('@')[0]}, ¡Genial! Ya eres un Asistente Espiritual de Hanako-kun (✿◠‿◠)`, mentions: [m.sender]}, { quoted: m }) : ''
+m?.chat ? await conn.sendMessage(m.chat, {text: args[0] ? `@${m.sender.split('@')[0]}, ya estás conectado, leyendo mensajes entrantes...` : `@${m.sender.split('@')[0]}, ¡Genial! Ya eres un Asistente Espiritual de Tanjiro-Bot (✿◠‿◠)`, mentions: [m.sender]}, { quoted: m }) : ''
 
 }}
 setInterval(async () => {
