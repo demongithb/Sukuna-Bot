@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
   let name = await conn.getName(who);
 
   await sendContactArray(conn, m.chat, [
-    [numeroPropio, 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ', '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃', '❀ No hacer spam', 'soymaycol.cn@gmail.com', '⊹˚• Perú •˚⊹', 'https://nightapi.is-a.dev/', bio]
+    [numeroPropio, 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ', '𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 𝐌𝐃', '❀ No hacer spam', 'jxxlznexce@gmail.com', '⊹˚• Perú •˚⊹', 'https://nightapi.is-a.dev/', bio]
   ], m);
 };
 
