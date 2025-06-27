@@ -5,72 +5,34 @@
 import ffmpeg from 'fluent-ffmpeg'
 import fs from 'fs'
 import path from 'path'
-import { exec } from 'child_process'
-import { promisify } from 'util'
 
-const execAsync = promisify(e
+let handler = async (m, { conn, args, command, usedPrefix }) => {
+ // if (!m.isGroup) return m.reply('👻 Este comando solo funciona en grupos, espíritu.')
 
-let handler = async (m, { co args, command, usedPrefix }) => {
- // if (!m.isGroup) return m.reply('👻 Este comando solo funciona en grupos, espíritu
   // Aquí leemos el número que ponen después de mayeditor
   let type = args[0]?.toLowerCase()
-  if (!e || !['1','2','3','4','5', '6', '7', '8', '9', '10'].includes(type)) {
+  if (!type || !['1','2','3','4','5', '6', '7', '8', '9', '10'].includes(type)) {
     return m.reply(`✧ Usa el comando así:\n\n${usedPrefix + command} 1\nExiste del 1 al 10`)
   }
 
-  // Map de videos según el número que pongan (ahora con URLs)
+  // Map de videos según el número que pongan
   const videosMap = {
-    '1': 'https://files.catbox.moe/3c2dvn.mp4',
-    '2': 'https://files.catbox.moe/ma45xv.mp4',
-    '3': 'https://files.catbox.moe/jaitl8.mp4',
-    '4': 'https://files.catbox.moe/egjief.mp4',
-    '5': 'https://files.catbox.moe/ol9nt6.mp4',
-    '6': 'https://files.catbox.moe/mpoioh.mp4',
-    '7': 'https://files.catbox.moe/swrnxi.mp4',
-    '8': 'https://files.catbox.moe/tv6atn.mp4',
-    '9': 'https://files.catbox.moe/hmpoim.mp4',
-    '10': 'https://files.catbox.moe/mpoioh.mp4'
+    '1': './videos/lv_7507655713968164149_20250607160908.mp4',
+    '2': './videos/lv_7463895997605743933_20250607164555.mp4',
+    '3': './videos/lv_7404392617884028176_20250607165541.mp4',
+    '4': './videos/lv_7403812168765852946_20250607173804.mp4',
+    '5': './videos/lv_7495448057157340469_20250607164932.mp4',
+    '6': './videos/lv_7497686403254373693_20250607170616.mp4',
+    '7': './videos/lv_7507655713968164149_20250607160908.mp4',
+    '8': './videos/lv_7478259089345187125_20250608202445.mp4',
+    '9': './videos/lv_7504712502689746229_20250608202734.mp4',
+    '10': './videos/lv_7307348459189800197_20250609084922.mp4'
   }
 
-  // Función para descargar video usando curl
-  const downloadVideoWithCurl = async (url, outputPath) => {
-    try {
-      const curlCommand = `curl -L "${url}" -o "${outputPath}"`
-      console.log(`Ejecutando: ${curlCommand}`)
-      
-      const { stdout, stderr } = await execAsync(curlCommand)
-      
-      if (stderr && stderr.includes('error')) {
-        throw new Error(`Error en curl: ${stderr}`)
-      }
-      
-      // Verificar que el archivo se descargó correctamente
-      if (!fs.existsSync(outputPath)) {
-        throw new Error('El archivo no se descargó correctamente')
-      }
-      
-      const stats = fs.statSync(outputPath)
-      if (stats.size === 0) {
-        throw new Error('El archivo descargado está vacío')
-      }
-      
-      console.log(`✅ Video descargado exitosamente: ${stats.size} bytes`)
-      return true
-      
-    } catch (error) {
-      console.error('Error descargando con curl:', error)
-      // Limpiar archivo parcial si existe
-      if (fs.existsSync(outputPath)) {
-        fs.unlinkSync(outputPath)
-      }
-      throw error
-    }
-  }
+  // Elegimos la ruta del video según el número
+  const inputVideoPath = videosMap[type]
 
-  // Elegimos la URL del video según el número
-  const inputVideoUrl = videosMap[type]
-
-  // Rate limiting: 15 veces al día por usuario
+  // Rate limiting: 10 veces al día por usuario
   const userId = m.sender
   const today = new Date().toDateString()
 
@@ -99,7 +61,7 @@ let handler = async (m, { co args, command, usedPrefix }) => {
 
   try {
     // Mensaje inicial con barra de progreso
-    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/15 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> Hecho por SoyMaycol`)
+    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> Hecho por SoyMaycol`)
 
     // Función para actualizar la barra de progreso
     const updateProgress = async (percent) => {
@@ -107,9 +69,9 @@ let handler = async (m, { co args, command, usedPrefix }) => {
       const filledBars = Math.floor((percent / 100) * totalBars)
       const emptyBars = totalBars - filledBars
       const progressBar = '▰'.repeat(filledBars) + '▱'.repeat(emptyBars)
-      
-      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/15 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> Hecho por SoyMaycol`
-      
+
+      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> Hecho por SoyMaycol`
+
       try {
         await conn.sendMessage(m.chat, { text: progressMessage, edit: initialMessage.key })
       } catch (e) {
@@ -119,30 +81,25 @@ let handler = async (m, { co args, command, usedPrefix }) => {
 
     const pp = await conn.profilePictureUrl(userId, 'image').catch(_ =>    
       'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')    
-        
+
     const profileResponse = await fetch(pp)    
     const profileBuffer = await profileResponse.buffer()    
-        
+
     const tempDir = './temp'    
     if (!fs.existsSync(tempDir)) {    
       fs.mkdirSync(tempDir, { recursive: true })    
     }    
-        
+
     const profilePath = path.join(tempDir, `profile_${targetUserId}.jpg`)    
-    const inputVideoPath = path.join(tempDir, `input_${targetUserId}_${Date.now()}.mp4`)
     const outputVideoPath = path.join(tempDir, `output_${targetUserId}_${Date.now()}.mp4`)    
-        
+
+    if (!fs.existsSync(inputVideoPath)) {    
+      return m.reply('❌ No se encontró el video base. Verifica la ruta del archivo.')    
+    }    
+
     fs.writeFileSync(profilePath, profileBuffer)    
 
     // Actualizar progreso: preparación completada
-    await updateProgress(5)
-
-    // Descargar el video usando curl
-    console.log(`Descargando video desde: ${inputVideoUrl}`)
-    await downloadVideoWithCurl(inputVideoUrl, inputVideoPath)
-    console.log('✅ Video descargado exitosamente con curl')
-
-    // Actualizar progreso: descarga completada
     await updateProgress(15)
 
     // Primero obtenemos las dimensiones del video
@@ -156,12 +113,12 @@ let handler = async (m, { co args, command, usedPrefix }) => {
     const videoStream = videoInfo.streams.find(s => s.codec_type === 'video')
     const videoWidth = videoStream.width
     const videoHeight = videoStream.height
-    
+
     console.log(`Video dimensions: ${videoWidth}x${videoHeight}`)
-    
+
     // Actualizar progreso: análisis completado
     await updateProgress(25)
-        
+
     await new Promise((resolve, reject) => {    
       ffmpeg(inputVideoPath)    
         .input(profilePath)    
@@ -198,7 +155,7 @@ let handler = async (m, { co args, command, usedPrefix }) => {
             // Actualizar barra de progreso en tiempo real
             const adjustedPercent = Math.min(25 + (progress.percent * 0.7), 95)
             await updateProgress(adjustedPercent)
-            
+
             if (Math.round(progress.percent) % 20 === 0) {    
               console.log(`Processing... ${Math.round(progress.percent)}%`)    
             }    
@@ -225,9 +182,9 @@ let handler = async (m, { co args, command, usedPrefix }) => {
     if (fileStats.size === 0) {
       throw new Error('El archivo de video procesado está vacío')
     }
-        
+
     const processedVideo = fs.readFileSync(outputVideoPath)    
-        
+
     const fkontak = {    
       key: {    
         participants: '0@s.whatsapp.net',    
@@ -242,7 +199,7 @@ let handler = async (m, { co args, command, usedPrefix }) => {
       },    
       participant: '0@s.whatsapp.net'    
     }    
-        
+
     const magicMessage = `
 ✧･ﾟ: ✧･ﾟ: 𝑀𝒶𝑔𝒾𝒸 𝒱𝒾𝒹𝑒𝑜 :･ﾟ✧:･ﾟ✧
 𓂃𓈒𓏸 Video mágico tipo ${type} creado para @${targetUserId}
@@ -259,53 +216,46 @@ let handler = async (m, { co args, command, usedPrefix }) => {
       mentions: [userId],    
       mimetype: 'video/mp4'    
     }, { quoted: fkontak })    
-        
+
     // Limpieza de archivos temporales después de enviar
     setTimeout(() => {    
       try {    
         if (fs.existsSync(profilePath)) fs.unlinkSync(profilePath)    
-        if (fs.existsSync(inputVideoPath)) fs.unlinkSync(inputVideoPath)
         if (fs.existsSync(outputVideoPath)) fs.unlinkSync(outputVideoPath)    
-        console.log('✅ Archivos temporales limpiados (incluyendo video descargado con curl)')
+        console.log('✅ Archivos temporales limpiados')
       } catch (e) {    
         console.error('Error limpiando archivos temporales:', e)    
       }    
-    }, 15000)
+    }, 15000) // Aumentado el tiempo para asegurar que el video se envíe
 
   } catch (error) {
     console.error('Error procesando video:', error)
-    
+
     // Revertir el contador solo si hubo un error real
     if (userLimit.count > 0) {
       userLimit.count--
     }
-    
+
     // Mensaje de error más específico
     let errorMessage = '❌ Ocurrió un error al procesar tu video mágico.'
-    
+
     if (error.message.includes('FFmpeg')) {
       errorMessage += '\n🔧 Error de procesamiento de video. Verifica que el archivo base exista.'
     } else if (error.message.includes('fetch')) {
       errorMessage += '\n📸 Error al obtener tu foto de perfil. Inténtalo de nuevo.'
-    } else if (error.message.includes('curl')) {
-      errorMessage += '\n🌐 Error al descargar el video con curl. Verifica la conexión o el enlace.'
     } else {
       errorMessage += '\n⚠️ Error interno. Inténtalo de nuevo más tarde.'
     }
-    
+
     m.reply(errorMessage)
 
     // Limpieza de emergencia
     try {    
       const profilePath = path.join('./temp', `profile_${targetUserId}.jpg`)
-      const inputVideoPath = path.join('./temp', `input_${targetUserId}_${Date.now()}.mp4`)
       const outputVideoPath = path.join('./temp', `output_${targetUserId}_${Date.now()}.mp4`)
-      
+
       if (fs.existsSync(profilePath)) {    
         fs.unlinkSync(profilePath)    
-      }
-      if (fs.existsSync(inputVideoPath)) {    
-        fs.unlinkSync(inputVideoPath)    
       }
       if (fs.existsSync(outputVideoPath)) {
         fs.unlinkSync(outputVideoPath)
