@@ -71,7 +71,6 @@ global.ch = {
 ch1: '120363420010803947@newsletter',
 }
 global.multiplier = 70
-global.activeSocket = null;
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
