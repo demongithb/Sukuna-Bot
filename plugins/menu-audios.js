@@ -531,7 +531,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)	
 }}
 
-handler.help = ['menu'].map(v => v + 'able <option>')
+handler.help = ['menu']
 handler.tags = ['group'];
 handler.command = ['menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio'];
 handler.exp = 60
