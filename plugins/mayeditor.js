@@ -60,7 +60,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 
   try {
     // Mensaje inicial con barra de progreso
-    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> Hecho por SoyMaycol`)
+    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ`)
 
     // Función para actualizar la barra de progreso
     const updateProgress = async (percent) => {
