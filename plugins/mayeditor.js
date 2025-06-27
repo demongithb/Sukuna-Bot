@@ -61,7 +61,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 
   try {
     // Mensaje inicial con barra de progreso
-    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> Hecho por SoyMaycol`)
+    const initialMessage = await m.reply(`🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n▱▱▱▱▱▱▱▱▱▱ 0%\n\n> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ`)
 
     // Función para actualizar la barra de progreso
     const updateProgress = async (percent) => {
@@ -70,7 +70,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
       const emptyBars = totalBars - filledBars
       const progressBar = '▰'.repeat(filledBars) + '▱'.repeat(emptyBars)
 
-      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> Hecho por SoyMaycol`
+      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ`
 
       try {
         await conn.sendMessage(m.chat, { text: progressMessage, edit: initialMessage.key })
@@ -266,9 +266,9 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
   }
 }
 
-handler.help = ['mayeditor <1|2|3|4|5|6|7|8|9|10>']
+handler.help = ['darkeditor <1|2|3|4|5|6|7|8|9|10>']
 handler.tags = ['group', 'fun', 'media']
-handler.command = ['mayeditor']
+handler.command = ['darkeditor']
 handler.limit = true
 
 export default handler
