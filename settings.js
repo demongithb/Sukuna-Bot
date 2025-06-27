@@ -15,13 +15,13 @@ global.botNumber = '' //Ejemplo: 51921826291
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.owner = ['51971285104', '51939260619'];
+global.owner = ['51971285104', '51939260619', '51921826291'];
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.mods = []
 global.suittag = [] 
-global.prems = []
+global.prems = ['51921826291']
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -61,7 +61,7 @@ global.channel2 = 'qhttps://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
 global.md = 'https://github.com/Jxxlzncom/TanjiroBot'
 global.correo = 'soymaycol.cn@gmail.com'
 global.cn ='https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12';
-global.owner_ngl ='soymaycol1';
+global.owner_ngl ='soymaycoldev';
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
