@@ -23,7 +23,7 @@ export async function before(m) {
   global.comandosEnMantenimiento = global.comandosEnMantenimiento || []
 
   if (global.comandosEnMantenimiento.includes(command)) {
-    const mensaje = `╭─❍「 ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ 」\n│\n├─ El hechizo *${usedPrefix}${command}* está en *mantenimiento*.\n│\n├─ Vuelve a intentarlo más tarde~\n╰─✦`
+    const mensaje = `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ ✦ 」\n│\n├─ El hechizo *${usedPrefix}${command}* está en *mantenimiento*.\n│\n├─ Vuelve a intentarlo más tarde~\n╰─✦`
     await m.reply(mensaje)
     return
   }
@@ -32,13 +32,13 @@ export async function before(m) {
     const { bestMatch } = stringSimilarity.findBestMatch(command, allCommands)
     const suggestion = bestMatch.rating > 0.3 ? `¿Quisiste decir *${usedPrefix}${bestMatch.target}*?` : ''
 
-    const mensaje = `╭─❍「 ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ 」\n│\n├─ El hechizo *${usedPrefix}${command}* no existe en los registros del más allá.\n│\n├─ ${suggestion || 'Consulta los conjuros disponibles con:'}\n│   ⇝ *${usedPrefix}help*\n╰─✦`
+    const mensaje = `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ ✦ 」\n│\n├─ El hechizo *${usedPrefix}${command}* no existe en los registros del más allá.\n│\n├─ ${suggestion || 'Consulta los conjuros disponibles con:'}\n│   ⇝ *${usedPrefix}help*\n╰─✦`
     await m.reply(mensaje)
     return
   }
 
   if (chat?.isBanned) {
-    const avisoDesactivado = `╭─❍「 ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ 」\n│\n├─ El poder de Hanako ha sido *sellado* en este grupo.\n│\n├─ Invoca su regreso con:\n│   ⇝ *${usedPrefix}bot on*\n╰─✦`
+    const avisoDesactivado = `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ ✦ 」\n│\n├─ El poder de tanjiro ha sido *sellado* en este grupo.\n│\n├─ Invoca su regreso con:\n│   ⇝ *${usedPrefix}bot on*\n╰─✦`
     await m.reply(avisoDesactivado)
     return
   }
