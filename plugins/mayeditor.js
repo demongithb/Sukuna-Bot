@@ -69,7 +69,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
       const emptyBars = totalBars - filledBars
       const progressBar = '▰'.repeat(filledBars) + '▱'.repeat(emptyBars)
 
-      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> Hecho por SoyMaycol`
+      const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/10 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ`
 
       try {
         await conn.sendMessage(m.chat, { text: progressMessage, edit: initialMessage.key })
