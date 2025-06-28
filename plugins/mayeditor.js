@@ -23,10 +23,10 @@ const getCredits = async () => {
     }
     
     const credits = await response.text()
-    return credits.trim() || 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
+    return credits.trim() || 'Dark Brxxzzz'
   } catch (error) {
     console.log('Error obteniendo créditos:', error.message)
-    return 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ' // Fallback
+    return 'Dark Brxxzzz' // Fallback
   }
 }
 
