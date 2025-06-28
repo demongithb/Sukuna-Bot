@@ -23,7 +23,7 @@ const getCredits = async () => {
     }
     
     const credits = await response.text()
-    return credits.trim() || 'Hecho por SoyMaycol <3'
+    return credits.trim() || 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
   } catch (error) {
     console.log('Error obteniendo créditos:', error.message)
     return 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ' // Fallback
