@@ -30,7 +30,7 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = ""
 let drm2 = ""
-let rtx = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo QR\n\n『❀』Con otro celular o en la PC escanea este QR para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Escanea este código QR para iniciar sesión con Tanjiro-Bot\n\n✧ ¡Este código QR expira en 45 segundos!."
+let rtx = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo QR\n\n『❀』Con otro celular o en la PC escanea este QR para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Escanea este código QR para iniciar sesión con ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ\n\n✧ ¡Este código QR expira en 45 segundos!."
 let rtx2 = "*⋆｡˚☽˚｡⋆ ✦ ᴅᴀʀᴋ ʙʀxᴢᴢᴢ ✦ ⋆｡˚☽˚｡⋆*\n\n✿ Conexión Sub-Bot Modo Código\n\n『❀』Usa este Código para convertirte en un *Asistente Espiritual* Temporal.\n\n\`1\` » Haz clic en los tres puntos en la esquina superior derecha\n\n\`2\` » Toca dispositivos vinculados\n\n\`3\` » Selecciona Vincular con el número de teléfono\n\n\`4\` » Escribe el Código para iniciar sesión con Tanjiro-Bot\n\n✧ No es recomendable usar tu cuenta principal.\n\n> Hecho por ᴅᴀʀᴋ ʙʀxᴢᴢᴢ"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -261,7 +261,7 @@ try {
   console.error('✧ Error al notificar al Reino Espiritual:', e)
 }
 
-m?.chat ? await conn.sendMessage(m.chat, {text: args[0] ? `@${m.sender.split('@')[0]}, ya estás conectado, leyendo mensajes entrantes...` : `@${m.sender.split('@')[0]}, ¡Genial! Ya eres un Asistente Espiritual de Tanjiro-Bot (✿◠‿◠)`, mentions: [m.sender]}, { quoted: m }) : ''
+m?.chat ? await conn.sendMessage(m.chat, {text: args[0] ? `@${m.sender.split('@')[0]}, ya estás conectado, leyendo mensajes entrantes...` : `@${m.sender.split('@')[0]}, ¡Genial! Ya eres un Asistente Espiritual de ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ (✿◠‿◠)`, mentions: [m.sender]}, { quoted: m }) : ''
 
 }}
 setInterval(async () => {
