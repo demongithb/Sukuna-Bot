@@ -1,30 +1,61 @@
-import Starlights from '@StarlightsTeam/Scraper'
+// Usando Adonix API para stats y NightAPI para descargar xD
+// GitHub: SoySapo6
+import fetch from 'node-fetch';
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args || !args[0]) return conn.reply(m.chat, '🚩 Ingresa un enlace del vídeo de TikTok junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://vm.tiktok.com/ZMrFCX5jf/`, m, rcanal)
-    if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `Verifica que el link sea de TikTok`, m, rcanal).then(_ => m.react('✖️'))
-  await m.react('🕓')
-try {
-let { title, author, duration, views, likes, comment, share, published, downloads, dl_url } = await Starlights.tiktokdl(args[0])
-let txt = '`乂  T I K T O K  -  D O W N L O A D`\n\n'
-    txt += `        ✩  *Título* : ${title}\n`
-    txt += `        ✩  *Autor* : ${author}\n`
-    txt += `        ✩  *Duración* : ${duration} segundos\n`
-    txt += `        ✩  *Vistas* : ${views}\n`
-    txt += `        ✩  *Likes* : ${likes}\n`
-    txt += `        ✩  *Comentarios* : ${comment}\n`
-    txt += `        ✩  *Compartidos* : ${share}\n`
-    txt += `        ✩  *Publicado* : ${published}\n`
-    txt += `        ✩  *Descargas* : ${downloads}\n\n`
-    txt += `> 🚩 *${textbot}*`
-await conn.sendFile(m.chat, dl_url, 'tiktok.mp4', txt, m, null, rcanal)
-await m.react('✅')
-} catch {
-await m.react('✖️')
-}}
-handler.help = ['tiktok *<url tt>*']
-handler.tags = ['downloader']
-handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm)$/i
-handler.register = true
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text) return m.reply(`🌸 Ingresa el enlace de un video de TikTok.\n\n📌 *Ejemplo:*\n${usedPrefix + command} https://vm.tiktok.com/xxxxxx`);
 
-export default handler
+  try {
+    await m.react('🎴');
+
+    const adonixApi = `https://theadonix-api.vercel.app/api/tiktok?url=${encodeURIComponent(text)}`;
+    const statsRes = await fetch(adonixApi);
+    const statsData = await statsRes.json();
+
+    if (!statsData?.result?.video) {
+      await m.react('❌');
+      return m.reply('❌ No se pudo obtener los detalles del video.');
+    }
+
+    const { title, author, thumbnail, duration, likes, comments, shares, views } = statsData.result;
+
+    const caption = `「✦」Descargando *${title}*
+ღ *Autor :* ${author.name} (@${author.username})
+❐ *Duración :* ${duration} segundos
+★ *Likes :* ${likes}
+✿ *Comentarios :* ${comments}
+🜲 *Compartidos :* ${shares}
+⌨︎︎ *Vistas :* ${views}
+☁︎ *Servidor :* NightAPI & Adonix`;
+
+    await conn.sendMessage(m.chat, {
+      image: { url: thumbnail },
+      caption
+    }, { quoted: m });
+
+    const nightApi = `https://nightapi.is-a.dev/api/tiktok?url=${encodeURIComponent(text)}`;
+
+    await conn.sendMessage(m.chat, {
+      video: { url: nightApi },
+      mimetype: 'video/mp4',
+      fileName: `${author.username || 'video'}.mp4`
+    }, { quoted: m });
+
+    await m.react('✅');
+
+  } catch (e) {
+    console.error(e);
+    await m.react('⚠️');
+    m.reply(`❌ Error al procesar el enlace.`);
+  }
+};
+
+handler.help = ['tiktok'].map((v) => v + ' *<link>*');
+handler.tags = ['descargas'];
+handler.command = ['tiktok', 'tt'];
+handler.group = true;
+handler.register = true;
+handler.coin = 2;
+handler.limit = true;
+
+export default handler;
