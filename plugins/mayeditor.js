@@ -26,7 +26,7 @@ const getCredits = async () => {
     return credits.trim() || 'Hecho por SoyMaycol <3'
   } catch (error) {
     console.log('Error obteniendo créditos:', error.message)
-    return 'Hecho por SoyMaycol <3' // Fallback
+    return 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ' // Fallback
   }
 }
 
@@ -431,9 +431,9 @@ try {
 }
 }
 
-handler.help = ['mayeditor <1|2|3|4|5|6|7|8|9|10>']
+handler.help = ['darkeditor <1|2|3|4|5|6|7|8|9|10>']
 handler.tags = ['group', 'fun', 'media']
-handler.command = ['mayeditor']
+handler.command = ['darkeditor']
 handler.limit = true
 
 export default handler
