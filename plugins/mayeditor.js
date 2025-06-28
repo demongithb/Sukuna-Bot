@@ -17,16 +17,16 @@ const getCredits = async () => {
         'User-Agent': 'Mozilla/5.0 (compatible; Bot/1.0)'
       }
     })
-    
+
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`)
     }
-    
+
     const credits = await response.text()
-    return credits.trim() || 'Dark Brxxzzz'
+    return credits.trim() || 'Hecho por SoyMaycol <3'
   } catch (error) {
     console.log('Error obteniendo créditos:', error.message)
-    return 'Dark Brxxzzz' // Fallback
+    return 'Hecho por SoyMaycol <3' // Fallback
   }
 }
 
@@ -100,9 +100,9 @@ const updateProgress = async (percent) => {
   const filledBars = Math.floor((percent / 100) * totalBars)  
   const emptyBars = totalBars - filledBars  
   const progressBar = '▰'.repeat(filledBars) + '▱'.repeat(emptyBars)  
-    
+
   const progressMessage = `🎬 Procesando tu video mágico tipo ${type}... (${userLimit.count}/15 usos hoy)\n✧ Esto tomará unos momentos...\n\n${progressBar} ${Math.round(percent)}%\n\n> ${credits}`  
-    
+
   try {  
     await conn.sendMessage(m.chat, { text: progressMessage, edit: initialMessage.key })  
   } catch (e) {  
@@ -115,20 +115,20 @@ let pp, profileBuffer
 try {
   pp = await conn.profilePictureUrl(userId, 'image').catch(_ =>      
     'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')      
-        
+
   const profileResponse = await fetch(pp, {
     timeout: 10000, // 10 segundos de timeout
     headers: {
       'User-Agent': 'Mozilla/5.0 (compatible; Bot/1.0)'
     }
   })
-  
+
   if (!profileResponse.ok) {
     throw new Error(`HTTP ${profileResponse.status}`)
   }
-  
+
   profileBuffer = await profileResponse.buffer()
-  
+
   if (!profileBuffer || profileBuffer.length === 0) {
     throw new Error('Buffer de imagen vacío')
   }
@@ -137,16 +137,16 @@ try {
   userLimit.count--
   return m.reply('❌ Error al obtener tu foto de perfil. Inténtalo de nuevo más tarde.')
 }
-      
+
 const tempDir = './temp'      
 if (!fs.existsSync(tempDir)) {      
   fs.mkdirSync(tempDir, { recursive: true })      
 }      
-      
+
 const uniqueId = `${targetUserId}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
 const profilePath = path.join(tempDir, `profile_${uniqueId}.jpg`)      
 const outputVideoPath = path.join(tempDir, `output_${uniqueId}.mp4`)      
-      
+
 try {
   fs.writeFileSync(profilePath, profileBuffer)
 } catch (error) {
@@ -165,7 +165,7 @@ try {
     const timeout = setTimeout(() => {
       reject(new Error('Timeout obteniendo información del video'))
     }, 15000) // 15 segundos timeout
-    
+
     ffmpeg.ffprobe(inputVideoPath, (err, metadata) => {
       clearTimeout(timeout)
       if (err) reject(err)
@@ -174,14 +174,14 @@ try {
   })  
 
   videoStream = videoInfo.streams.find(s => s.codec_type === 'video')  
-  
+
   if (!videoStream) {
     throw new Error('No se encontró stream de video válido')
   }
-  
+
   videoWidth = videoStream.width  
   videoHeight = videoStream.height  
-    
+
   console.log(`Video dimensions: ${videoWidth}x${videoHeight}`)  
 } catch (error) {
   console.error('Error obteniendo info del video:', error)
@@ -192,7 +192,7 @@ try {
   userLimit.count--
   return m.reply('❌ Error analizando el video base. El archivo puede estar corrupto.')
 }
-  
+
 // Actualizar progreso: análisis completado  
 await updateProgress(25)  
 
@@ -203,7 +203,7 @@ await new Promise((resolve, reject) => {
   }, 120000) // 2 minutos timeout
 
   let lastProgressTime = Date.now()
-  
+
   ffmpeg(inputVideoPath)      
     .input(profilePath)      
     .complexFilter([      
@@ -240,11 +240,11 @@ await new Promise((resolve, reject) => {
     .on('progress', async (progress) => {      
       if (progress.percent) {
         lastProgressTime = Date.now()
-        
+
         // Actualizar barra de progreso en tiempo real  
         const adjustedPercent = Math.min(25 + (progress.percent * 0.7), 95)  
         await updateProgress(adjustedPercent)  
-          
+
         if (Math.round(progress.percent) % 10 === 0) {      
           console.log(`Processing... ${Math.round(progress.percent)}%`)      
         }      
@@ -277,12 +277,12 @@ await new Promise((resolve, reject) => {
   // Limpiar interval cuando termine
   const originalResolve = resolve
   const originalReject = reject
-  
+
   resolve = (...args) => {
     clearInterval(progressChecker)
     originalResolve(...args)
   }
-  
+
   reject = (...args) => {
     clearInterval(progressChecker)
     originalReject(...args)
@@ -303,9 +303,9 @@ if (fileStats.size === 0) {
 if (fileStats.size < 10000) { // Menos de 10KB probablemente esté corrupto
   throw new Error('El archivo de video procesado parece estar corrupto (muy pequeño)')
 }
-      
+
 const processedVideo = fs.readFileSync(outputVideoPath)      
-      
+
 const fkontak = {      
   key: {      
     participants: '0@s.whatsapp.net',      
@@ -320,7 +320,7 @@ const fkontak = {
   },      
   participant: '0@s.whatsapp.net'      
 }      
-      
+
 const magicMessage = `
 ✧･ﾟ: ✧･ﾟ: 𝑀𝒶𝑔𝒾𝒸 𝒱𝒾𝒹𝑒𝑜 :･ﾟ✧:･ﾟ✧
 𓂃𓈒𓏸 Video mágico tipo ${type} creado para @${targetUserId}
@@ -343,23 +343,23 @@ while (sendAttempts < maxSendAttempts) {
       mentions: [userId],      
       mimetype: 'video/mp4'      
     }, { quoted: fkontak })
-    
+
     console.log('✅ Video enviado exitosamente')
     break // Salir del loop si se envió correctamente
-    
+
   } catch (sendError) {
     sendAttempts++
     console.error(`❌ Error enviando video (intento ${sendAttempts}):`, sendError.message)
-    
+
     if (sendAttempts >= maxSendAttempts) {
       throw new Error(`No se pudo enviar el video después de ${maxSendAttempts} intentos: ${sendError.message}`)
     }
-    
+
     // Esperar un poco antes del siguiente intento
     await new Promise(resolve => setTimeout(resolve, 2000))
   }
 }
-      
+
 // Limpieza de archivos temporales después de enviar  
 setTimeout(() => {      
   try {      
@@ -384,10 +384,10 @@ console.error('Error procesando video:', error)
 if (userLimit.count > 0) {  
   userLimit.count--  
 }  
-  
+
 // Mensaje de error más específico  
 let errorMessage = '❌ Ocurrió un error al procesar tu video mágico.'  
-  
+
 if (error.message.includes('Timeout')) {
   errorMessage += '\n⏱️ El procesamiento tomó demasiado tiempo. El servidor puede estar sobrecargado.'
 } else if (error.message.includes('FFmpeg')) {  
@@ -401,7 +401,7 @@ if (error.message.includes('Timeout')) {
 } else {  
   errorMessage += '\n⚠️ Error interno. Inténtalo de nuevo más tarde.'  
 }  
-  
+
 errorMessage += `\n\n> ${credits}`
 m.reply(errorMessage)  
 
@@ -409,12 +409,12 @@ m.reply(errorMessage)
 try {      
   const profilePath = path.join('./temp', `profile_${targetUserId}.jpg`)  
   const outputVideoPath = path.join('./temp', `output_${targetUserId}_*.mp4`)  
-    
+
   // Limpiar todos los archivos relacionados con este usuario
   const tempFiles = fs.readdirSync('./temp').filter(file => 
     file.includes(targetUserId) || file.includes('profile_') || file.includes('output_')
   )
-  
+
   tempFiles.forEach(file => {
     try {
       fs.unlinkSync(path.join('./temp', file))
@@ -423,7 +423,7 @@ try {
       console.error(`Error limpiando ${file}:`, e.message)
     }
   })
-  
+
 } catch (e) {      
   console.error('Error en limpieza de emergencia:', e)      
 }
@@ -431,9 +431,9 @@ try {
 }
 }
 
-handler.help = ['darkeditor <1|2|3|4|5|6|7|8|9|10>']
+handler.help = ['mayeditor <1|2|3|4|5|6|7|8|9|10>']
 handler.tags = ['group', 'fun', 'media']
-handler.command = ['darkeditor']
+handler.command = ['mayeditor']
 handler.limit = true
 
 export default handler
