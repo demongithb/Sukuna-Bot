@@ -31,7 +31,7 @@ ${data.Dirasakan.length > 3 ? `• Sentido: ${data.Dirasakan}` : ''}
 
 Mantente a salvo y informado! 🌍
 
-> 🚩 Powered by Jose XrL 
+> 🚩 Powered by ᴅᴀʀᴋ ʙʀxᴢᴢᴢ 
     `;
 
     await conn.sendMessage(m.chat, {
