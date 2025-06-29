@@ -7,5 +7,5 @@ let handler = async (m, { args, usedPrefix, command }) => {
   txt += '✅ Hackeo completo.';
   m.reply(txt, null, { mentions: [user] });
 };
-handler.command = /^hackear/i;
+handler.command = /hackear/i;
 export default handler;
