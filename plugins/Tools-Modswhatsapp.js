@@ -33,7 +33,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 
 handler.help = ['whatsappsearch *<búsqueda>*'];
 handler.tags = ['search'];
-handler.command = /^(modwhatsapp|whatsappmods)$/i;
+handler.command = /(modwhatsapp|whatsappmods)/i;
 handler.register = true;
 
 export default handler;
