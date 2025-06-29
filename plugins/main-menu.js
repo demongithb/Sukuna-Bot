@@ -23,12 +23,12 @@ let handler = async (m, { conn, args }) => {
 
   // MENÚ HANAKO-KUN STYLE CON BOTONES
   let menuText = `
-╭───❖ ${global.botname} ❖───╮
+╭───❖ Tanjiro ❖───╮
 
  ｡ﾟ☆: *.${name}.* :☆ﾟ｡  
 > *_${saludo}_*
 
-╰─────❖ 𝓜𝓮𝓷𝓾 ❖─────╯
+╰─────❖ Tanjiro ❖─────╯
 
 ✦ 𝙸𝙽𝙵𝙾 𝙳𝙴 𝚂𝚄𝙼𝙾𝙽 ✦
 
@@ -38,7 +38,7 @@ let handler = async (m, { conn, args }) => {
 👥 Espíritus: ${totalreg} Espiritus
 ⌚ Hora: ${hour}
 
-> Hecho con amor por: *_${global.apodo}_* (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤
+> Hecho por: ᴅᴀʀᴋ ʙʀxᴢᴢᴢ
 
 ≪──── ⋆𓆩✧𓆪⋆ ────≫
 
@@ -60,14 +60,14 @@ let handler = async (m, { conn, args }) => {
       mentionedJid: [m.sender, userId],
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: global.canalIdM,
-        newsletterName: global.botname,
+        newsletterJid: '120363420010803947@newsletter',
+        newsletterName: 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ',
         serverMessageId: -1,
       },
       forwardingScore: 999,
       externalAdReply: {
         title: botname,
-        body: "Un amor que nunca se acaba Jeje <3",
+        body: "Hola! Soy Tanjiro Kamado",
         thumbnailUrl: banner,
         sourceUrl: redes,
         mediaType: 1,
@@ -79,7 +79,7 @@ let handler = async (m, { conn, args }) => {
 
   // Enviar menú con botones y video estilo gif
   await conn.sendMessage(m.chat, {
-    video: { url: global.video, gifPlayback: true },
+    video: { url: 'https://files.catbox.moe/095s6m.mp4', gifPlayback: true },
     caption: menuText,
     gifPlayback: true,
     buttons: buttons,
@@ -88,14 +88,14 @@ let handler = async (m, { conn, args }) => {
       mentionedJid: [m.sender, userId],
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: global.canalIdM,
-        newsletterName: global.botname,
+        newsletterJid: '120363420010803947@newsletter',
+        newsletterName: 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ',
         serverMessageId: -1,
       },
       forwardingScore: 999,
       externalAdReply: {
         title: botname,
-        body: "Un amor que nunca se acaba Jeje <3",
+        body: "Holaa",
         thumbnailUrl: banner,
         sourceUrl: redes,
         mediaType: 1,
@@ -106,11 +106,11 @@ let handler = async (m, { conn, args }) => {
   }, { quoted: m })
 }
 
-handler.help = ['menuprin']
+handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menuprin', 'menú', 'help', 'ayuda']
+handler.command = ['menu', 'menú', 'help', 'ayuda']
 
-export default handler
+// export default handler
 
 function clockString(ms) {
   let h = Math.floor(ms / 3600000)
