@@ -2,7 +2,7 @@
 // ┋ 『 ᴴᵃⁿᵃᵏᵒ⋆⁺₊𝕂𝕌ℕ 』 ⋆ Bienvenidas & Despedidas ⋆
 // ┗━━━━━━༻❀༺━━━━━━┛
 
-import { WAMessageStubType } from '@whiskeysockets/baileys'
+import { WAMessageStubType } from '@soymaycol/maybailyes'
 import fetch from 'node-fetch'
 
 // ♡～(‘▽^人) antes de que llegue el mensajitooo
@@ -28,7 +28,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
     'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')
   let img = await (await fetch(`${pp}`)).buffer()
   let chat = global.db.data.chats[m.chat]
-
+  let redes = global.canalLink
+  
   // ✦゜.* Hanako vibes ✧.*゜
   let txt = '╭─━━━⊰ゲ⊱━━━─╮\n      🕯️ Nuevo Espíritu\n╰─━━━⊰ゲ⊱━━━─╯'
   let txt1 = '╭─━━━⊰ゲ⊱━━━─╮\n      🕯️ Espíritu Perdido\n╰─━━━⊰ゲ⊱━━━─╯'
