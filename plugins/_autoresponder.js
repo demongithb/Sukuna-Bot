@@ -1,6 +1,6 @@
 import axios from 'axios'
 import fetch from 'node-fetch'
-import { downloadContentFromMessage } from '@whiskeysockets/baileys'
+import { downloadContentFromMessage } from '@soymaycol/maybailyes'
 
 let handler = m => m
 handler.all = async function (m, { conn }) {
