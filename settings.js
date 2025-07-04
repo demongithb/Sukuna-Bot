@@ -27,9 +27,9 @@ global.namechannel2 = 'ᴅʀᴀᴋᴏ • Actualizaciones'
 global.namegrupo = 'ᴅʀᴀᴋᴏ • Actualizaciones'
 global.namecomu = 'ᴅʀᴀᴋᴏ • Actualizaciones'
 global.apodo = 'ᴅʀᴀᴋᴏ'
-global.repo = 'SoySapo6/MaycolAIUltraMD'
+global.repo = 'demongithb/Sukuna-Bot'
 global.pais = '⊹˚• Perú •˚⊹'
-global.github = 'SoySapo6'
+global.github = 'demongithb'
 
 // ╭── ✦ Información del Bot ✦ ──⊷
 global.libreria = 'MayBailyes'
