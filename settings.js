@@ -85,7 +85,7 @@ global.comunidad1 = 'https://whatsapp.com/channel/0029VbBLnRJHLHQRY3e6ql3A'
 global.channel = global.comunidad1
 global.channel2 = global.comunidad1
 global.md = 'https://github.com/demongithb/Sukuna-Bot'
-global.correo = 'karatekidamericatv@gmail.com'
+global.correo = 'jxxlznexce@gmail.com'
 global.cn = global.comunidad1
 global.owner_ngl = 'Drakodev'
 global.canalIdM = ["120363372883715167@newsletter"]
@@ -128,7 +128,7 @@ global.moment = moment
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("⭑ Hanako dice: Se actualizó 'settings.js' ⭑"))
+  console.log(chalk.redBright("⭑ Sukuna dice: Se actualizó 'settings.js' ⭑"))
   import(`${file}?update=${Date.now()}`)
 })
   
