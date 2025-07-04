@@ -44,8 +44,8 @@ global.jadi = 'MayBots'
 global.yukiJadibts = true
 
 // ╭── ✦ Personalización Visual ✦ ──⊷
-global.packname = '𝕄𝕒𝕪𝕔𝕠𝕝𝔸𝕀𝕌𝕝𝕥𝕣𝕒-𝕄𝔻'
-global.botname = '𝐌𝐚𝐲𝐜𝐨𝐥𝐀𝐈𝐔𝐥𝐭𝐫𝐚-𝐌𝐃'
+global.packname = '𝐒𝐮𝐤𝐮𝐧𝐚-𝐁𝐨𝐭'
+global.botname = '𝐒𝐮𝐤𝐮𝐧𝐚-𝐁𝐨𝐭'
 global.wm = '𝙼𝚊𝚢𝚌𝚘𝚕𝙰𝙸𝚄𝚕𝚝𝚛𝚊-𝙼𝙳'
 global.author = '𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧 𝙎𝙤𝙮𝙈𝙖𝙮𝙘𝙤𝙡 <3'
 global.dev = global.author
