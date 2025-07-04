@@ -89,7 +89,7 @@ global.correo = 'karatekidamericatv@gmail.com'
 global.cn = global.comunidad1
 global.owner_ngl = 'Drakodev'
 global.canalIdM = ["120363372883715167@newsletter"]
-global.canalNombreM = ["𝐒𝐨𝐲𝐌𝐚𝐲𝐜𝐨𝐥 <𝟑 • Actualizaciones"]
+global.canalNombreM = ["𝘿𝙧𝙖𝙠𝙤 • Actualizaciones"]
 global.canalLink = ["https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R"]
 
 // ╭── ✦ Catálogo y Estilo ✦ ──⊷
