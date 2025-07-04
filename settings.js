@@ -84,7 +84,7 @@ global.gp1 = 'https://chat.whatsapp.com/FQfPYeuQ193Br18aKQC2gw?mode=ac_c'
 global.comunidad1 = 'https://whatsapp.com/channel/0029VbBLnRJHLHQRY3e6ql3A'
 global.channel = global.comunidad1
 global.channel2 = global.comunidad1
-global.md = 'https://github.com/SoySapo6/MaycolAI'
+global.md = 'https://github.com/demongithb/Sukuna-Bot'
 global.correo = 'karatekidamericatv@gmail.com'
 global.cn = global.comunidad1
 global.owner_ngl = 'Drakodev'
