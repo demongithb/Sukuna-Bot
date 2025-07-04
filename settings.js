@@ -17,11 +17,11 @@ import moment from 'moment-timezone'
 global.botNumber = '' // Ejemplo: 51921826291
 
 // ╭── ✦ Propietario y Staff ✦ ──⊷
-global.owner = ['51921826291']
+global.owner = ['51971285104']
 global.mods = []
 global.suittag = []
 global.prems = []
-global.creador = '51921826291'
+global.creador = '51971285104'
 global.namechannel = '𝐒𝐨𝐲𝐌𝐚𝐲𝐜𝐨𝐥 <𝟑 • Actualizaciones'
 global.namechannel2 = '𝐒𝐨𝐲𝐌𝐚𝐲𝐜𝐨𝐥 <𝟑 • Actualizaciones'
 global.namegrupo = '𝐒𝐨𝐲𝐌𝐚𝐲𝐜𝐨𝐥 <𝟑 • Actualizaciones'
