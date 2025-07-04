@@ -67,7 +67,7 @@ global.waittt = '¡Esperame (⁠´⁠∩⁠｡⁠•⁠ ⁠ᵕ⁠ ⁠•⁠｡
 global.waitttt = '¡Esperame (⁠´⁠∩⁠｡⁠•⁠ ⁠ᵕ⁠ ⁠•⁠｡⁠∩⁠`⁠)!';
 
 // ╭── ✦ Configuración General ✦ ──⊷
-global.moneda = 'MayCoins'
+global.moneda = 'DraCoins'
 global.welcom1 = '❍ Edita Con El Comando setwelcome'
 global.welcom2 = '❍ Edita Con El Comando setbye'
 global.banner = 'https://files.catbox.moe/l8ohvs.jpeg'
