@@ -90,7 +90,7 @@ global.cn = global.comunidad1
 global.owner_ngl = 'Drakodev'
 global.canalIdM = ["120363372883715167@newsletter"]
 global.canalNombreM = ["𝙎𝙪𝙠𝙪𝙣𝙖-𝘽𝙤𝙩 • Actualizaciones"]
-global.canalLink = ["https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R"]
+global.canalLink = ["https://whatsapp.com/channel/0029VbBLnRJHLHQRY3e6ql3A"]
 
 // ╭── ✦ Catálogo y Estilo ✦ ──⊷
 global.catalogo = fs.readFileSync('./src/catalogo.jpg')
